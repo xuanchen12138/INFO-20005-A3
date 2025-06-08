@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  width: 1368px;
+  height: 912px;
+  border: #000000 1px solid;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #EDEDED;
+  height: 102px;
+  width: 1368px;
+  top: 0;
+  position: absolute;
+}
+
+.logo img {
+  height: 53px;
+  width: 153px;
+  left: 57px;
+  top: 39px ;
+  position: absolute;
+}
+
+.menu a {
+  margin-left: 70px;
+  text-decoration: none;
+  color: #091634;
+  font-weight:600;
+  font-style: normal;
+}
+
+.menu a.active {
+  color: #165584;
+  border-bottom: 2px solid #165584;
+}
+
+.title {
+  font-size: 67px;
+  font-weight: bold;
+  font-style: normal;
+  top: 440px;
+  left: 273px;
+  position: absolute;
+}
+
+.shop-button {
+  width: 210px;
+  height: 61px;
+  background-color: #165584;
+  color: #fff;
+  border: none;
+  border-radius: 17px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  top: 531px;
+  left: 273px;
+  position: absolute;
+}
+
+.subtext1 {
+  top: 288px;
+  left: 91px;
+  font-size: 0.9rem;
+  color: #707070;
+  position: absolute;
+}
+
+.subtext2 {
+  top: 718px;
+  left: 57px;
+  font-size: 0.9rem;
+  color: #707070;
+  position: absolute;
+}
+
+
+.label {
+  height: 85px;
+  position: absolute;
+  padding: 12px 20px;
+  background: linear-gradient(to right, #658aa5, #2e4d62);
+  color: white;
+  font-weight: bold;
+  border-radius: 43px;
+  border: #ffffff 20px solid;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.label1 {
+  top: 190px;
+  left: 700px;
+}
+
+.label2 {
+  top: 756px;
+  left: 572px;
+}
+
+.cover img {
+  top: 258px;
+  left: 734px;
+  width: 634px;
+  height: 507px;
+  position: absolute;
+}
