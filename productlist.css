@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    width: 1368px;
+    height: 912px;
+    border: #000000 1px solid;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #EDEDED;
+    height: 91px;
+    width: 1368px;
+    top: 0;
+    position: absolute;
+}
+
+.logo img {
+     height: 53px;
+    width: 153px;
+    left: 45px;
+    top: 39px ;
+    position: flex;
+}
+
+.menu a {
+    margin-left: 70px;
+    text-decoration: none;
+    color: #091634;
+    font-weight:600;
+    font-style: normal;
+}
+
+.menu a.active {
+    color: #165584;
+    border-bottom: 2px solid #165584;
+}
+
+.page-container {
+    margin-top: 91px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.search-container {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-left: 45px;
+}
+
+
+.searchbar-container,
+.price-container,
+.model-container,
+.age-container,
+.button-container {
+    margin-bottom: 1rem;
+}
+
+hr.line {
+    border: none;
+    height: 1px;
+    background-color: #7E879B;
+    transition: all 0.2s ease;
+    margin: 1rem 0;
+}
+
+.searchbar-container input,
+.price-container input,
+.age-container input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    font-style: italic;
+    color: #5a5a5a;
+}
+
+.model-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.model-btn {
+    padding: 0.5rem 1.2rem;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    color: #5a5a5a;
+    border-radius: 999px;
+    font-style: italic;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn.light {
+    height: 35px;
+    flex: 1;
+    padding: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #165584;
+    background: #ffffff;
+    color: #165584;
+    border-radius: 20px;
+}
+
+.btn.deep {
+    flex: 1;
+    height: 35px;
+    padding: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #165584;
+    background: #165584;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+.btn.light.clear,
+.btn.deep.apply {
+    width: 49%;
+    text-align: center;
+}
+
+.model-btn.active {
+    background-color: #c4c4c4;
+    color: #000;
+    border-color: #c4c4c4;
+}
+
+.card-container {
+    width: 1078px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.display-card {
+    display: flex;
+    flex-direction: column;
+
+    height: 390px;
+    width: 495px;
+
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-title {
+    height: 55px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    padding-left: 15px;
+}
+
+.card-title .name,
+.card-title .price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+
+.card-title .subname,
+.card-title .subprice {
+    font-size: 0.85rem;
+    color: #4c6172;
+    font-style: italic;
+    font-weight: 450;
+}
+
+.card-title .price {
+    color: #165584;
+}
+
+.card-title .price,
+.card-title .subprice {
+    margin-left: 120px;
+}
+
+
+.card-details {
+    height: 70px;
+    width: 100%;
+}
+
+.card-button {
+    height: 65px;
+    display: flex;
+    gap: 1rem;
+    padding: 14px;
+    padding-top: 0px;
+}
+
+
+
+
