@@ -79,6 +79,7 @@ body {
     margin-bottom: 1rem;
 }
 
+
 hr.line {
     border: none;
     height: 1px;
@@ -102,6 +103,7 @@ hr.line {
 }
 
 .model-buttons {
+    margin-top: 0.5rem;
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
@@ -147,9 +149,17 @@ a.btn.deep {
     justify-content: center; 
 }
 
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    gap: 10px;
+}
+
 .btn.light.clear,
 .btn.deep.apply {
-    width: 49%;
+    width: 48%;
     text-align: center;
 }
 

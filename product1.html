@@ -51,7 +51,8 @@
                 </div>
 
                 <div class="button-container">
-                    <button class="btn light add-to-cart"
+                    <button class="btn light purchase-now">Book a view</button>
+                    <button class="btn deep add-to-cart"
                         data-id="1"
                         data-image="/images/1.png"
                         data-name="2016 Audi RS3"
@@ -59,7 +60,7 @@
                         data-price="$46,990">
                         Add to Cart
                     </button>
-                    <button class="btn deep purchase-now">Purchase Now</button>
+                    
                 </div>                      
             </div>
 
@@ -88,6 +89,28 @@
             </div>
         </div>
     </div>
+
+    <div id="cart-added" class="overlay hidden">
+            <div class="content">
+
+                <div class="header">
+                    <button class="close">✕</button>
+                </div>
+
+                <div class="icon-complete">
+                    <img src="/images/complete.png" alt="Carsales Logo" />
+                </div>
+
+                <div class="text">
+                    <label>Item successfully added to cart</label>
+                </div>
+
+                <a href="cart.html" class="button-cart">Go To Cart</a>
+
+                <a href="productlist.html" class="button-productlist">See More Product</a>
+            </div>
+    </div>
+
 </main>
 
 <script src="product.js"></script>

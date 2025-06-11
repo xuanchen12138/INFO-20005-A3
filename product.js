@@ -20,9 +20,23 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
 
       // Refferebce: https://www.w3schools.com/js/js_json_stringify.asp
       localStorage.setItem('cart', JSON.stringify(cart));
-      alert('Product added');
-    } else {
-      alert('Product already in cart');
     }
+
+    document.getElementById('cart-added').classList.remove('hidden');
   });
+});
+
+
+document.addEventListener('click', function (e) {
+    if (e.target.classList.contains('add-to-cart')) {
+        document.getElementById('cart-added').classList.remove('hidden');
+    }
+
+    if (e.target.classList.contains('close')) {
+        document.getElementById('cart-added').classList.add('hidden');
+    }
+
+    if (e.target.classList.contains('button-cart')) {
+        document.getElementById('cart-added').classList.add('hidden');
+    }
 });
