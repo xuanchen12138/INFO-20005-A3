@@ -51,3 +51,38 @@ document.addEventListener('click', function (e) {
 
 document.addEventListener('DOMContentLoaded', renderCart);
 // Refference: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+
+
+// Begin purchase modal by click
+document.addEventListener('click', function (e) {
+    if (e.target.classList.contains('btn-purchase')) {
+        document.getElementById('purchase1').classList.remove('hidden');
+    }
+
+    // Close purchase modal
+    if (e.target.classList.contains('close1')) {
+        document.getElementById('purchase1').classList.add('hidden');
+    }
+
+    if (e.target.classList.contains('continue1')) {
+        document.getElementById('purchase2').classList.remove('hidden');
+    }
+
+    if (e.target.classList.contains('close2')) {
+        document.getElementById('purchase2').classList.add('hidden');
+    }
+
+    if (e.target.classList.contains('continue2')) {
+        document.getElementById('purchase3').classList.remove('hidden');
+    }
+
+    if (e.target.classList.contains('close3')) {
+        document.getElementById('purchase3').classList.add('hidden');
+    }
+
+    if (e.target.classList.contains('continue3')) {
+        document.getElementById('purchase1').classList.add('hidden');
+        document.getElementById('purchase2').classList.add('hidden');
+        document.getElementById('purchase3').classList.add('hidden');
+    }
+});

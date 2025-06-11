@@ -8,7 +8,9 @@
 </head>
 <body>
     <header class="navbar">
-        <div class="logo"><img src="logo.png" alt="Carsales Logo" /></div>
+        <div class="logo">
+            <img src="/images/logo.png" alt="Carsales Logo" />
+        </div>
         <nav class="menu">
             <a href="#">Activity</a>
             <a href="#">Contact us</a>
@@ -41,6 +43,119 @@
                 <tbody id="cart-body">
                 </tbody>
             </table>
+        </div>
+
+        <!-- Purchase Modal -->
+        <div id="purchase1" class="overlay hidden">
+            <div class="content1">
+                <div class="purchase-logo">
+                    <img src="/images/logo-w.png" alt="Carsales Logo" />
+                </div>
+                <div class="header">
+                    <button class="close1">&larr;</button>
+                    <h4 class="text">Checkout</h4>
+                </div>
+                <div class="symbol">
+                    <img src="/images/checkout-1.png" alt="Checkout Symbol" />
+                </div>
+                
+                
+                <form class="checkout-form">
+
+                    <div class="name">
+                        <label>Name</label>
+                        <input type="text" placeholder="Your Name"/>
+                    </div>
+                    <div class="address">
+                        <label>Address</label>
+                        <input type="text" placeholder="Your Address"/>
+                    </div>
+                    <div class="country">
+                        <label>Country</label>
+                        <input type="text" placeholder="Your Country"/>
+                    </div>
+                    <div class="state">
+                        <label>State</label>
+                        <input type="text" placeholder="Your State"/>
+                    </div>
+                    <div class="city">
+                        <label>City</label>
+                        <input type="text" placeholder="Your City"/>
+                    </div>
+                    <div class="phone">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="Your Phone Number"/>
+                    </div>
+
+                    <button class="continue1" type="submit">Continue</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="purchase2" class="overlay hidden">
+            <div class="content2">
+                <div class="purchase-logo">
+                    <img src="/images/logo-w.png" alt="Carsales Logo" />
+                </div>
+                <div class="header">
+                    <button class="close2">&larr;</button>
+                    <h4 class="text">Checkout</h4>
+                </div>
+                <div class="symbol">
+                    <img src="/images/checkout-2.png" alt="Checkout Symbol" />
+                </div>
+                
+                
+                <form class="checkout-form">
+
+                    <div class="method">
+                        <label>Select payment method</label>
+                        <img src="/images/method.png" alt="Checkout methods" />
+                    </div>
+                    <div class="card-number">
+                        <label>Card Number</label>
+                        <input type="text" placeholder="XXXX XXXX XXXX XXXX" />
+                    </div>
+                    <div class="holder-name">
+                        <label>Cardholder Name</label>
+                        <input type="text" placeholder="Your Name"  />
+                    </div>
+                    <div class="date-cvv">
+                        <div class="ex-date">
+                            <label>Expiry Date</label>
+                            <input type="text" placeholder="XX/XXXX"  />
+                        </div>
+                        <div class="cvv">
+                            <label>CVV</label>
+                            <input type="text" placeholder="XXX"  />
+                        </div>
+                    </div>
+
+
+                    <button class="continue2" type="submit">Continue</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="purchase3" class="overlay hidden">
+            <div class="content3">
+                <div class="purchase-logo">
+                    <img src="/images/logo-w.png" alt="Carsales Logo" />
+                </div>
+                <div class="header">
+                    <button class="close3">&larr;</button>
+                    <h4 class="text">Checkout</h4>
+                </div>
+                <div class="symbol">
+                    <img src="/images/checkout-3.png" alt="Checkout Symbol" />
+                </div>
+
+                <div class="complete">
+                    <img src="/images/complete.png" alt="Complete purhcase" />
+                </div>
+
+                <button class="continue3">Back to cart</button>
+            </div>
         </div>
     </main>
     <script src="cart.js"></script>
