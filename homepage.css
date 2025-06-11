@@ -109,7 +109,7 @@ a.shop-button {
 }
 
 .label2 {
-  top: 756px;
+  top: 750px;
   left: 572px;
 }
 
@@ -119,4 +119,12 @@ a.shop-button {
   width: 634px;
   height: 507px;
   position: absolute;
+}
+
+.label,
+.title,
+.shop-button,
+.subtext1,
+.subtext2 {
+  z-index: 99999; 
 }

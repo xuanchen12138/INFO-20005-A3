@@ -78,9 +78,6 @@ body {
     overflow: hidden;
 }
 
-.car-image img {
-}
-
 .icon {
     width: 100%;
     height: 60px;
@@ -242,4 +239,21 @@ hr.line {
     background: #165584;
     color: #ffffff;
     border-radius: 999px;
+}
+
+.car-image img,
+.details-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+}
+
+.icon img {
+    width: 10%;
+    height: 40%;
+    object-fit: fill;
+    display: block;
+    justify-content: center;
+    margin-left: 300px;
 }
