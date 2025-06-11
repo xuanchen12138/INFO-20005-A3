@@ -12,7 +12,6 @@ body {
     max-width: 1368px;
     margin: 0 auto;
     padding: 0; /* maintain height */
-    border: #000000 1px solid;
 }
 
 .navbar {
