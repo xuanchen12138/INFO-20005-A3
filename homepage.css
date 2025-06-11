@@ -55,7 +55,7 @@ body {
   position: absolute;
 }
 
-.shop-button {
+a.shop-button {
   width: 210px;
   height: 61px;
   background-color: #165584;
@@ -68,6 +68,10 @@ body {
   top: 531px;
   left: 273px;
   position: absolute;
+    text-decoration: none;  
+    display: flex;         
+    align-items: center;     
+    justify-content: center;   
 }
 
 .subtext1 {

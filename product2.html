@@ -14,9 +14,9 @@
     <nav class="menu">
         <a href="#">Activity</a>
         <a href="#">Contact us</a>
-        <a href="#">Cart</a>
-        <a href="#">Product</a>
-        <a href="#">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="productlist.html" class="active">Product</a>
+        <a href="homepage.html" >Home</a>
     </nav>
 </header>
 
@@ -49,11 +49,17 @@
                     <h4 class="price">$114,888</h4>
                     <h4 class="subprice">Excl. Govt. Charges</h4>  
                 </div>
-
                 <div class="button-container">
-                    <button class="btn light">Add To Cart</button>
-                    <button class="btn deep">Purchase Now</button>
-                </div>                        
+                    <button class="btn light add-to-cart"
+                        data-id="2"
+                        data-image="2.jpg"
+                        data-name="2024 BMW 4 Series"
+                        data-description="This is a sample description."
+                        data-price="$114,888">
+                        Add to Cart
+                    </button>
+                    <button class="btn deep purchase-now">Purchase Now</button>
+                </div>                         
             </div>
 
         </div>
@@ -80,5 +86,6 @@
         </div>
     </div>
 </main>
+<script src="product.js"></script>
 </body>
 </html>
