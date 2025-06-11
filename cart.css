@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    width: 1368px;
+    height: 912px;
+    border: #000000 1px solid;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #EDEDED;
+    height: 91px;
+    width: 1368px;
+    top: 0;
+    position: absolute;
+}
+
+.logo img {
+     height: 53px;
+    width: 153px;
+    left: 45px;
+    top: 39px ;
+    position: flex;
+}
+
+.menu a {
+    margin-left: 70px;
+    text-decoration: none;
+    color: #091634;
+    font-weight:600;
+    font-style: normal;
+}
+
+.menu a.active {
+    color: #165584;
+    border-bottom: 2px solid #165584;
+}
+
+.cart-wrapper {
+    width: 1268px;    
+    margin: 91px auto 0 auto;      
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.cart-table thead th {
+    height: 40px;                  
+    font-weight: 480;
+    font-size: 15PX;
+    color: #165584;
+    text-align: center;
+    vertical-align: middle;
+  
+}
+
+.cart-table td {
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1.5px solid #7E879B;
+    font-weight: 500;
+}
+
+
+.cart-table td:nth-child(1) {
+    width: 218px;
+    height: 195px;
+
+}
+
+.cart-table td:not(:first-child) {
+    width: 175px;
+    height: 195px; 
+}
+
+.cart-table td:nth-child(4) {
+    color: #165584;
+}
+
+
+.btn-contact{
+    padding: 0.5rem;
+    width: 75%;
+    border: 2px solid #165584;
+    color: #165584;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 999px;
+}
+
+.btn-purchase {
+    padding: 0.5rem;
+    background-color: #165584;
+    border: 2px solid #165584;
+    width: 75%;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 999px;
+}
+
+.btn-remove {
+    font-size: 1.5rem;
+    color: #165584;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
