@@ -29,13 +29,32 @@ function renderCart() {
     // Append the row to the tbody
     tbody.appendChild(row);
   });
+
+  const mobileCart = document.getElementById('mobile-cart-body');
+mobileCart.innerHTML = '';
+
+cart.forEach((item, index) => {
+  const card = document.createElement('div');
+  card.className = 'mobile-cart-item';
+  card.innerHTML = `
+
+    <img src="${item.image}" alt="${item.name}" />
+
+    <div class="mobile-cart-details">
+      <button class="btn-purchase-mobile">Purchase Now</button>
+      <button class="btn-remove-mobile" data-index="${index}">Remove</button>
+    </div>
+  `;
+  mobileCart.appendChild(card);
+});
+
 }
 
 // Listen for clicks
 document.addEventListener('click', function (e) {
 
   // If the click is on the remove button
-  if (e.target.classList.contains('btn-remove')) {
+  if (e.target.classList.contains('btn-remove') || e.target.classList.contains('btn-remove-mobile')) {
 
     // Get the item's index and remove it by splice()
     const index = parseInt(e.target.dataset.index);
@@ -55,7 +74,20 @@ document.addEventListener('DOMContentLoaded', renderCart);
 
 // Begin purchase modal by click
 document.addEventListener('click', function (e) {
+
+    if (e.target.classList.contains('flags')) {
+        document.getElementById('hidden-menus').classList.remove('hidden');
+    }
+
+    if (e.target.classList.contains('menu-close')) {
+        document.getElementById('hidden-menus').classList.add('hidden');
+    }
+
     if (e.target.classList.contains('btn-purchase')) {
+        document.getElementById('purchase1').classList.remove('hidden');
+    }
+
+    if (e.target.classList.contains('btn-purchase-mobile')) {
         document.getElementById('purchase1').classList.remove('hidden');
     }
 
@@ -65,6 +97,7 @@ document.addEventListener('click', function (e) {
     }
 
     if (e.target.classList.contains('continue1')) {
+        e.preventDefault();
         document.getElementById('purchase2').classList.remove('hidden');
     }
 
@@ -73,6 +106,7 @@ document.addEventListener('click', function (e) {
     }
 
     if (e.target.classList.contains('continue2')) {
+        e.preventDefault();
         document.getElementById('purchase3').classList.remove('hidden');
     }
 
